@@ -1,11 +1,15 @@
 root_extra_deps = [ "//libchromiumcontent/chromiumcontent" ]
 is_component_build = false
 is_debug = false
-enable_nacl = false
+enable_nacl = true
 enable_widevine = true
-proprietary_codecs = false
+proprietary_codecs = true
 is_component_ffmpeg = true
-ffmpeg_branding = "Chromium"
+ffmpeg_branding = "Chrome"
+use_gold = false
+enable_ac3_eac3_audio_demuxing = true
+enable_hevc_demuxing = true
+
 
 # Use the system provided standard library on platforms other than Linux.
 if (target_os != "linux") {
